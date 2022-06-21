@@ -3,38 +3,38 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/1tn6vedeaq0v27ra?svg=true)](https://ci.appveyor.com/project/richkmeli/richkware)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e6b4a003d5e7404c80225391bfe34f45)](https://app.codacy.com/app/richkmeli/Richkware?utm_source=github.com&utm_medium=referral&utm_content=richkmeli/Richkware&utm_campaign=Badge_Grade_Dashboard)
 
-Framework for building Windows malware, written in C++.
+C++で書かれたWindows向けマルウェア構築のためのフレームワーク。
 
-## Description
+## 概要
 
-Richkware is a library of network and OS functions, that you can use to create malware.
-The composition of these functions permits the application to assume behaviors referable to the following types of malware:
+Richkwareは、マルウェアを作成するために使用できるライブラリです。
+これらの関数を組み合わせることで、以下のようなマルウェアを想定した挙動をすることができます。
 
-- Virus
-- Worms
-- Bot
-- Spyware
-- Keylogger
-- Scareware
+- ウイルス
+- ワーム
+- ボット
+- スパイウェア
+- キーロガー
+- スケアウェア
 
-## Related Projects
+## 関連プロジェクト
 
-[Richkware-Manager-Server](https://github.com/richkmeli/Richkware-Manager-Server): Service for the management of hosts in which is present an instance of malware developed using **Richkware** framework.
+[Richkware-Manager-Server](https://github.com/richkmeli/Richkware-Manager-Server): Richkwareを使用して開発されたマルウェアのサンプルが存在するホストを管理するためのサービスです。
 
-[Richkware-Manager-Client](https://github.com/richkmeli/Richkware-Manager-Client): Client of **Richkware-Manager-Server**, that it obtains the list of all hosts from the server and it's able to send any kind of commands to them.
+[Richkware-Manager-Client](https://github.com/richkmeli/Richkware-Manager-Client): Richkware-Manager-Serverのクライアントで、サーバーから全ホストのリストを取得し、それらにあらゆる種類のコマンドを送信することができるようになります。
 
 ![](https://raw.githubusercontent.com/richkmeli/richkmeli.github.io/master/Richkware/Diagram/RichkwareDiagram1.2.png)
 
-## Documentation
+## ドキュメント
 
-|              | EN                          | IT                     |
+|              | 英語                          | イタリア語                     |
 |--------------|:------------------------------:|:------------------:|
-| Presentation | [PDF](https://github.com/richkmeli/Richkware/blob/master/doc/EN/Slide.pdf)  | [PDF](https://github.com/richkmeli/Richkware/blob/master/doc/IT/Slide.pdf)     |
-| Report       | [PDF](https://github.com/richkmeli/Richkware/blob/master/doc/EN/Report.pdf) | [PDF](https://github.com/richkmeli/Richkware/blob/master/doc/IT/Relazione.pdf) |
+| 説明 | [PDF](https://github.com/richkmeli/Richkware/blob/master/doc/EN/Slide.pdf)  | [PDF](https://github.com/richkmeli/Richkware/blob/master/doc/IT/Slide.pdf)     |
+| 情報       | [PDF](https://github.com/richkmeli/Richkware/blob/master/doc/EN/Report.pdf) | [PDF](https://github.com/richkmeli/Richkware/blob/master/doc/IT/Relazione.pdf) |
 
-## Functions
+## 関数
 
-### Network
+### ネットワーク
 
 - **Server** (*network.h*): module for the management of a multi-thread server, that allow to receive commands from Internet([Richkware-Manager-Client](https://github.com/richkmeli/Richkware-Manager-Client) or console) according to the specific protocol.
     - **Protocol** (*protocol.h*):
