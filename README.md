@@ -3,11 +3,11 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/1tn6vedeaq0v27ra?svg=true)](https://ci.appveyor.com/project/richkmeli/richkware)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e6b4a003d5e7404c80225391bfe34f45)](https://app.codacy.com/app/richkmeli/Richkware?utm_source=github.com&utm_medium=referral&utm_content=richkmeli/Richkware&utm_campaign=Badge_Grade_Dashboard)
 
-C++で書かれたWindows向けマルウェア構築のためのフレームワーク。
+C++製のWindows向けマルウェア構築のためのフレームワーク。
 
 ## 概要
 
-Richkwareは、マルウェアを作成するために使用できるライブラリです。
+Richkwareは、マルウェアを作成するために役立つライブラリです。
 これらの関数を組み合わせることで、以下のようなマルウェアを想定した挙動をすることができます。
 
 - ウイルス
@@ -36,7 +36,7 @@ Richkwareは、マルウェアを作成するために使用できるライブ�
 
 ### ネットワーク
 
-- **Server** (*network.h*): module for the management of a multi-thread server, that allow to receive commands from Internet([Richkware-Manager-Client](https://github.com/richkmeli/Richkware-Manager-Client) or console) according to the specific protocol.
+- **サーバー** (*network.h*): マルチスレッドサーバを管理するためのモジュールで、特定のプロトコルにしたがってインターネット([Richkware-Manager-Client](https://github.com/richkmeli/Richkware-Manager-Client) かコンソールを使用) からコマンドを受信できるようにするものです。
     - **Protocol** (*protocol.h*):
         1. **Remotely command execution** (ID 1)
         2. (work in progress)
