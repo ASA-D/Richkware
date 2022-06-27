@@ -37,11 +37,11 @@ Richkwareは、マルウェアを作成するために役立つライブラリ�
 ### ネットワーク
 
 - **サーバー** (*network.h*): マルチスレッドサーバを管理するためのモジュールで、特定のプロトコルにしたがってインターネット([Richkware-Manager-Client](https://github.com/richkmeli/Richkware-Manager-Client) かコンソールを使用) からコマンドを受信できるようにするものです。
-    - **Protocol** (*protocol.h*):
-        1. **Remotely command execution** (ID 1)
-        2. (work in progress)
-- **Network** (*network.h*):
-    - **RawRequest**: send a request to a server;
+    - **プロトコル** (*protocol.h*):
+        1. **リモートでのコマンド実行** (ID 1)
+        2. (仕掛品)
+- **ネットワーク** (*network.h*):
+    - **ローリクエスト**: サーバーにリクエストを送信します。
     - **UploadInfoToRichkwareManagerServer**: send information to [Richkware-Manager-Server](https://github.com/richkmeli/Richkware-Manager-Server)
 
 ### System
